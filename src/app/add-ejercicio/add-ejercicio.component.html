@@ -1,0 +1,45 @@
+<mat-card class="example-card" style="background-color: #8d70c4; max-width: 400px;">
+  <mat-card-header>
+      <mat-card-title style="color: black;">Agregar Ejercicio</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+      <form class="example-form">
+          <table class="example-full-width" cellspacing="0">
+              <tr>
+                  <td>
+                      <mat-form-field class="example-full-width" >
+                          <input matInput placeholder="Ejercicio" [(ngModel)]="ejeruser.nombre" name="ejercicio"  required>
+                      </mat-form-field>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <mat-form-field class="example-full-width">
+                          <input matInput placeholder="Descripcion" [(ngModel)]="ejeruser.descripcion" name="descripcion">
+                      </mat-form-field>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                      <mat-form-field class="example-full-width">
+                          <input matInput placeholder="Series" [(ngModel)]="ejeruser.series" name="series" required>
+                      </mat-form-field>
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                    <mat-form-field class="example-full-width">
+                        <input matInput placeholder="Repeticiones" [(ngModel)]="ejeruser.repeticiones" name="repeticiones" required>
+                    </mat-form-field>
+                </td>
+            </tr>
+            <p *ngIf="error" class="error">
+              {{ error }}
+          </p>
+          </table>
+      </form>
+  </mat-card-content>
+  <mat-card-actions>
+      <button mat-raised-button (click)="createEjercicioUsuario()" color="accent">Agregar</button>
+  </mat-card-actions>
+</mat-card>

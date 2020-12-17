@@ -1,0 +1,15 @@
+<mat-toolbar >
+    <mat-toolbar-row>
+        <span><a mat-button style="font-size: larger;" routerLink="" >RFLGym</a></span>
+        <span class="example-fill-remaining-space"></span>
+        <span class="align-center"></span>
+        <span class="example-spacer"></span>
+        <a mat-button *ngIf="!loginService.isUserLoggedIn()" routerLink="/login" class="nav-link">Login</a>
+        <a mat-button *ngIf="!loginService.isUserLoggedIn()" routerLink="/register" class="nav-link">Registrar</a>
+        <a mat-button *ngIf="loginService.isUserLoggedIn()" routerLink="/" class="nav-link">Rutina</a>
+        <a mat-button *ngIf="loginService.isUserLoggedIn()" routerLink="/addejercicio" class="nav-link">Agregar Ejercicio</a>
+        <a mat-button *ngIf="loginService.isUserLoggedIn()" routerLink="/logout" class="nav-link">LogOut</a>
+        <span class="flexExpand"></span>
+        <a mat-button *ngIf="loginService.isUserLoggedIn()"  >Bienvenido: {{usuario.userName.toUpperCase()}}</a>
+    </mat-toolbar-row>
+</mat-toolbar>

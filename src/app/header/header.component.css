@@ -1,0 +1,11 @@
+p {
+  font-family: Lato;
+}
+
+.flexExpand {
+  flex: 1 1 auto;
+}
+
+.flexSpaceBetween {
+  justify-content: space-between;
+}

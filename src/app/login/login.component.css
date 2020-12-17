@@ -1,0 +1,53 @@
+:host {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+}
+
+.mat-form-field {
+    width: 100%;
+    min-width: 300px;
+}
+
+mat-card{
+  background-color: #8d70c4;
+
+}
+
+mat-card-title,
+mat-card-content {
+
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    padding: 16px;
+    width: 300px;
+    color: white;
+    background-color: #ff4081;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+input:-internal-autofill-selected{
+  outline-color: #8d70c4;
+  background-color: #8d70c4 !important;
+  color: #8d70c4 !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #8d70c4 inset !important;
+}
+
+/*Change text in autofill textbox*/
+/* input:-webkit-autofill {
+  -webkit-text-fill-color: yellow !important;
+} */
+

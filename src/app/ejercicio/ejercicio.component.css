@@ -1,0 +1,37 @@
+:host {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px;
+}
+
+.mat-form-field {
+  width: 100%;
+  min-width: 300px;
+}
+
+mat-card-title,
+mat-card-content {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-elevation-z8{
+  background-color: #af8af2;
+}
+
+th{
+  color: black;
+}
+
+td{
+  background-color:#cbb7f0 ;
+}
+
+button{
+  background-color: blueviolet;
+  color: whitesmoke;
+}
